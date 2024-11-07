@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plotly Plot</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <h1>Monthly Expenses Plot</h1>
+    <div id="plotly-graph"></div>
+    <form method="post" action="/save_plot">
+        <button type="submit">Save Plot</button>
+    </form>
+
+    <script type="text/javascript">
+        var graph_json = {{ graph_json | safe }};
+        Plotly.newPlot('plotly-graph', graph_json.data, graph_json.layout);
+    </script>
+</body>
+</html>

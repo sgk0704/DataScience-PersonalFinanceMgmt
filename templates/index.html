@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PFM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <nav>
+        <div class="links-1">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+        </div>
+        <div class="logo">
+            <a href="#">EconX</a>
+        </div>
+        <div class="links-2">
+            <a href="#">Analysis</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+
+    <footer>
+        <p>&copy;FinSavvy</p>
+        <p>Data Science</p>
+    </footer>
+
+    <div class="container">
+        <div class="active-slide">
+            <img src="static/images/1.jpg" alt="">
+            <img src="static/images/1.jpg" alt="">
+            <img src="static/images/1.jpgg" alt="">
+            <img src="static/images/1.jpg" alt="">
+            <img src="static/images/1.jpg" alt="">
+            <img src="static/images/1.jpg" alt="">
+            <img src="static/images/1.jpg" alt="">
+            <img src="static/images/1.jpg" alt="">
+            <img src="static/images/1.jpg" alt="">
+            <img src="static/images/1.jpg" alt="">
+        </div>
+
+        <div class="slider">
+            <div class="slide" id="slide-1">
+                <div class="wrap">
+                    <button onclick="location.href='/form'" class="button"><span style="font-size: 30px;">X</span>plore</a>
+                </div>
+                <h1 style="color: aliceblue;">{{ result }}</h1>
+            </div>
+
+            
+
+            <div class="slide" id="slide-2">
+                
+                <div class="slide-img">
+                    <img src="static/images/graph7.jpg" alt="">
+                </div>
+                <div class="slide-copy">
+                    <p>
+                        This distribution shows the percentage of users / entities that have been suggested the following actions as per the data processed by the model.
+                    </p>
+                </div>
+            </div>
+
+            <div class="slide" id="slide-3">
+                
+                <div class="slide-img">
+                    <img src="static/images/graph6.png" alt="">
+                </div>
+                <div class="slide-copy">
+                    <p>
+                        This graph shows the correlation between age, gender, monthly pocketmoney and the relationship status.
+                    </p>
+                    
+                </div>
+            </div>
+
+            <div class="slide" id="slide-4">
+                
+                <div class="slide-img">
+                    <img src="static/images/graph5.png" alt="">
+                </div>
+                <div class="slide-copy">
+                    <p>
+                        This graph shows the distribution on expenditure on monthly essentials like food, transport and education.
+                    </p>
+                </div>
+            </div>
+
+            <div class="slide" id="slide-5">
+                
+                <div class="slide-img">
+                    <img src="static/images/graph4.png" alt="">
+                </div>
+                <div class="slide-copy">
+                    <p>
+                        The doughnut chart represents the distribution of relationship status for all the entities within the database.
+                    </p>
+                </div>
+            </div>
+
+            <div class="slide" id="slide-6">
+                
+                <div class="slide-img">
+                    <img src="static/images/graph3.jpg" alt="">
+                </div>
+                <div class="slide-copy">
+                    <p>
+                        The following graph depicts the distribution of monthly income to the frequency of the students having similar income/pocketmoney. the curve depicts the median distribution for each of the distribution.
+                    </p>
+                </div>
+            </div>
+
+            <div class="slide" id="slide-7">
+                
+                <div class="slide-img">
+                    <img src="static/images/graph2.jpg" alt="">
+                </div>
+                <div class="slide-copy">
+                    <p>
+                        The following is a boxplot depicting the expenses with respect to the category of expenses. the box plots depict the bounds for each description along with the mean distribution for each expense category.
+                    </p>
+                </div>
+            </div>
+
+            <div class="slide" id="slide-8">
+                
+                <div class="slide-img">
+                    <img src="static/images/graph1.jpg" alt="">
+                </div>
+                <div class="slide-copy">
+                    <p>
+                        This boxplot shows the distribution of monthly expenses to all the available expense categories. Each boxplot represents a single expense attribute with its bounds and mean represented within it.
+                    </p>
+                 </div>
+            </div>
+
+            <div class="slide" id="slide-9">
+                <div class="about">
+                    <h1>About Us</h1>
+                    <p>Personal finance management is the process of effectively managing one's income, expenses, savings, and investments. It involves creating and sticking
+                         to a budget that allocates funds for essential expenses, savings, and goals such as retirement or education. Monitoring and adjusting this budget 
+                         regularly helps individuals stay on track financially. Managing debt responsibly is also crucial, as it impacts one's financial health and ability to save 
+                         and invest. Ultimately, personal finance management aims to achieve financial independence and security by making informed financial decisions and planning
+                          for both short-term needs and long-term aspirations.
+                    </p>
+                </div>
+            </div>
+
+            <div class="slide" id="slide-10">
+                <h1>
+                    Personal Finance Management
+                </h1>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="static/script.js"></script>
+
+    <!-- <script>
+        document.getElementById('navigateButton').addEventListener('click', function() {
+            window.location.href = 'form1.html'; 
+        });
+    </script> -->
+</body>
+</html>

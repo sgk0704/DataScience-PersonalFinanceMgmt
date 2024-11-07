@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Results</title>
+    <link rel="stylesheet" href="static/result.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <div class="heading">
+        <h1>
+            You asked for it, here are your results.
+        </h1>
+    </div>
+    <div class="resbody">
+        <h1>Prediction Results :</h1>
+        {% if result[2] == "Recommendation" or result[2] == "your health" %}
+            <h2>Prediction of {{ result[2] }}</h2>
+            <b><p><u>{{ result[0]['label'] }}:</u></p></b>
+            <p>{{ result[0]['suggestion'] }}</p>
+        {% else %}
+        <h2>Predicted {{ result[2] }}: {{ result[0] }}</h2>
+            <!-- Other content or fallback message when button4 was not clicked -->
+        {% endif %}
+        
+        
+        
+        <div style="display: flex; flex-wrap: wrap;">
+            {% for plot in result[1] %}
+                <img style="margin-right: 20px;margin-left: 90px ;margin-top: 80px;justify-content: center;align-items: center;" src="data:image/png;base64,{{ plot }}" alt="Plot" width="800" height="450">
+            {% endfor %}
+        </div>
+    </div>
+    
+
+</body>
+</html>

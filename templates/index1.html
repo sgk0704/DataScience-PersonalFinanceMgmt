@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Visualization</title>
+</head>
+<body>
+    <h1>Personal Finance Prediction</h1>
+    <div>
+        <h3>User Input Form</h3>
+        <form action="/predict" method="POST" target="_blank">
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age" required><br>
+
+            <label for="gender">Gender</label>
+            <select name="gender" id="gender" required>
+                <option value="0">Male</option>
+                <option value="1">Female</option>
+            </select><br><br>
+
+            <label for="place_of_stay">Place of Stay</label>
+            <select name="place_of_stay" id="place_of_stay" required>
+                <option value="0">Urban</option>
+                <option value="1">Rural</option>
+            </select><br><br>
+
+            <label for="relationship_status">Relationship status</label>
+            <select name="relationship_status" id="relationship_status" required>
+                <option value="0">Married</option>
+                <option value="1">Unmarried</option>
+                <option value="2">Dating</option>
+            </select><br><br>
+
+            <label for="no_of_dependents">No of dependents</label>
+            <input type="number" name="no_of_dependents" id="no_of_dependents" required><br><br>
+
+            <label for="monthly_pocketmoney">Monthly pocketmoney</label>
+            <input type="number" name="monthly_pocketmoney" id="monthly_pocketmoney" required><br><br>
+
+            <label for="monthly_exp_on_transport">Monthly exp on transport</label>
+            <input type="number" name="monthly_exp_on_transport" id="monthly_exp_on_transport" required><br><br>
+
+            <label for="monthly_exp_on_food">Monthly exp on food</label>
+            <input type="number" name="monthly_exp_on_food" id="monthly_exp_on_food" required><br><br>
+
+            <label for="monthly_exp_on_education">Monthly exp on education</label>
+            <input type="number" name="monthly_exp_on_education" id="monthly_exp_on_education" required><br><br>
+
+            <label for="notable_investments">Notable investments</label>
+            <input type="number" name="notable_investments" id="notable_investments" required><br><br>
+
+            <label for="recurring_monthly_payments">Recurring monthly payments (Subscriptions, plans, recharge etc.)</label>
+            <input type="number" name="recurring_monthly_payments" id="recurring_monthly_payments" required><br><br>
+
+            <label for="debt">Debt</label>
+            <input type="number" name="debt" id="debt" required><br><br>
+
+            <label for="monthly_savings">Monthly savings</label>
+            <input type="number" name="monthly_savings" id="monthly_savings" required><br><br>
+
+            <label for="financial_goals">Financial goals</label>
+            <input type="number" name="financial_goals" id="financial_goals" required><br><br>
+
+            <label for="monthly_budget">Do you follow a monthly budget?</label>
+            <select name="monthly_budget" id="monthly_budget" required>
+                <option value="0">Never</option>
+                <option value="1">Sometimes</option>
+                <option value="2">Always</option>
+            </select><br><br>
+
+            <label for="dine_out">How often do you dine out?</label>
+            <select name="dine_out" id="dine_out" required>
+                <option value="0">Once or twice</option>
+                <option value="1">4-5 times</option>
+                <option value="2">Everyday</option>
+            </select><br><br>
+
+            <label for="impulse_purchases">How often do you make impulse purchases?</label>
+            <select name="impulse_purchases" id="impulse_purchases" required>
+                <option value="0">Never</option>
+                <option value="1">Sometimes</option>
+                <option value="2">Always</option>
+            </select><br><br>
+
+            <label for="financial_products">Do you currently invest in any financial products like stocks, mutual funds or cryptocurrencies?</label>
+            <select name="financial_products" id="financial_products" required>
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select><br><br>
+
+            <label for="financial_risk">How comfortable are you with taking financial risk in your investments?</label>
+            <select name="financial_risk" id="financial_risk" required>
+                <option value="1">Comfortable</option>
+                <option value="0">Not comfortable</option>
+            </select><br><br>
+
+            <label for="finance_apps">Do you use any mobile apps or online platforms to manage your finances and investments?</label>
+            <select name="finance_apps" id="finance_apps" required>
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select><br><br>
+
+            <label for="groceries">Expenses on fresh groceries and whole foods.</label>
+            <input type="number" name="groceries" id="groceries" required><br><br>
+
+            <label for="online_takeout">Expenses on online takeout</label>
+            <input type="number" name="online_takeout" id="online_takeout" required><br><br>
+
+            <label for="medicine">Expenditure on medicine</label>
+            <input type="number" name="medicine" id="medicine" required><br><br>
+
+            <label for="outings">Expenses on outings</label>
+            <input type="number" name="outings" id="outings" required><br><br>
+
+            <label for="tax_payments">Tax payments</label>
+            <input type="number" name="tax_payments" id="tax_payments" required><br><br>
+
+            <label for="food_types">What types of food do you spend money on</label>
+            <select name="food_types" id="food_types" required>
+                <option value="1">Western Fast Food</option>
+                <option value="2">Chinese / Continental</option>
+                <option value="3">Indian</option>
+                <option value="4">Salads & healthy snacks</option>
+                <option value="5">Packaged foods / Processed foods</option>
+            </select><br><br>
+
+            <button type="submit" name="button1" value="button1">Expense Prediction</button>
+            <button type="submit" name="button2" value="button2">Savings Prediction</button>
+            <button type="submit" name="button3" value="button3">Financial Health</button>
+            <button type="submit" name="button4" value="button4">Recommendation</button>
+            <button type="submit" name="button5" value="button5">Personel Health Analysis</button>
+            <button type="submit" name="button6" value="button6">General</button>
+        </form>
+       
+    </div>
+</body>
+</html>
